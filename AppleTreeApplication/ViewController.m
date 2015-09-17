@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *property1;
@@ -18,10 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    AppDelegate * appdelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.apple = appdelegate.apple;
 }
 - (IBAction)growPress:(id)sender {
     NSLog(@"test");
-    [self.property1 setText:@"AAAA"];
+    NSLog(@"apple %d", self.apple.stones);
+    [self.property1 setText:@"AAA"];
 }
 
 - (void)didReceiveMemoryWarning {

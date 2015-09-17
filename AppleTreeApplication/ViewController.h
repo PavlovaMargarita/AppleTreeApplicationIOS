@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Apple.h"
 
 @interface ViewController : UIViewController
 
+@property Apple * apple;
 
 @end
 
