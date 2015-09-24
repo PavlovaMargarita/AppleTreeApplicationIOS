@@ -17,7 +17,6 @@ typedef enum color {
 @property int stones;
 @property Color color;
 @property BOOL isOnTree;
-@property BOOL isBreaking;
 
 - (Color) mature;
 

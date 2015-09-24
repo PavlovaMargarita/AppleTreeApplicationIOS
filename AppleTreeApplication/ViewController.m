@@ -10,6 +10,10 @@
 #import "AppDelegate.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *countOfApples;
+@property (weak, nonatomic) IBOutlet UILabel *countOfLeafs;
+@property (weak, nonatomic) IBOutlet UILabel *treeHeight;
 @property (weak, nonatomic) IBOutlet UILabel *property1;
 
 @end
@@ -20,17 +24,34 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     AppDelegate * appdelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    self.apple = appdelegate.apple;
+    
+    self.appleTree = appdelegate.appleTree;
+    
+    [self.countOfApples setText:@"AAA"];
 }
+
 - (IBAction)growPress:(id)sender {
-    NSLog(@"test");
-    NSLog(@"apple %d", self.apple.stones);
-    [self.property1 setText:@"AAA"];
+    [self.appleTree grow];
+    [self setValuesToLabels];
+    
+}
+
+- (IBAction)shakePress:(id)sender {
+    [self.appleTree shake];
+    [self setValuesToLabels];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) setValuesToLabels{
+    [self.countOfApples setText:[NSString stringWithFormat:@"%zd", [self.appleTree.apples count]]];
+    [self.countOfLeafs setText:[NSString stringWithFormat:@"%zd", [self.appleTree.leafs count]]];
+    [self.treeHeight setText:[NSString stringWithFormat:@"%d", self.appleTree.height]];
 }
 
 @end

@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Apple.h"
+#import "AppleTree.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property Apple * apple;
+@property AppleTree * appleTree;
 
 @end
 

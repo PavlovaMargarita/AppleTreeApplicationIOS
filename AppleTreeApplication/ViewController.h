@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Apple.h"
+#import "AppleTree.h"
 
 @interface ViewController : UIViewController
 
-@property Apple * apple;
+@property AppleTree * appleTree;
 
 @end
 

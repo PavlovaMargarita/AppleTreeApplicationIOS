@@ -13,7 +13,6 @@
 -(id) init {
     self = [super init];
     if(self){
-        _isBreaking = NO;
         _isOnTree = YES;
         _stones = 2;
         _color = GREEN;
@@ -32,8 +31,8 @@
 }
 
 - (void) breaking{
-    if(!_isBreaking){
-        _isBreaking = YES;
+    if(_isOnTree){
+        _isOnTree = NO;
     } else {
         NSLog(@"Warning!!! Apple was broken");
     }

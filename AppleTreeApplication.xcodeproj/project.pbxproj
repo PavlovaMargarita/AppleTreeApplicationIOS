@@ -15,6 +15,9 @@
 		D015DEAF1BAB274F0070EB4E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D015DEAD1BAB274F0070EB4E /* LaunchScreen.xib */; };
 		D015DEBB1BAB274F0070EB4E /* AppleTreeApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D015DEBA1BAB274F0070EB4E /* AppleTreeApplicationTests.m */; };
 		D015DEC61BAB2C9D0070EB4E /* Apple.m in Sources */ = {isa = PBXBuildFile; fileRef = D015DEC51BAB2C9D0070EB4E /* Apple.m */; };
+		D05992C41BB4410900E41D6F /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = D05992C31BB4410900E41D6F /* Tree.m */; };
+		D05992C71BB4414100E41D6F /* Leaf.m in Sources */ = {isa = PBXBuildFile; fileRef = D05992C61BB4414100E41D6F /* Leaf.m */; };
+		D05992CA1BB441C400E41D6F /* AppleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = D05992C91BB441C400E41D6F /* AppleTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,12 @@
 		D015DEBA1BAB274F0070EB4E /* AppleTreeApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleTreeApplicationTests.m; sourceTree = "<group>"; };
 		D015DEC41BAB2C9D0070EB4E /* Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apple.h; sourceTree = "<group>"; };
 		D015DEC51BAB2C9D0070EB4E /* Apple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apple.m; sourceTree = "<group>"; };
+		D05992C21BB4410900E41D6F /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		D05992C31BB4410900E41D6F /* Tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tree.m; sourceTree = "<group>"; };
+		D05992C51BB4414100E41D6F /* Leaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leaf.h; sourceTree = "<group>"; };
+		D05992C61BB4414100E41D6F /* Leaf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Leaf.m; sourceTree = "<group>"; };
+		D05992C81BB441C400E41D6F /* AppleTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleTree.h; sourceTree = "<group>"; };
+		D05992C91BB441C400E41D6F /* AppleTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,12 @@
 				D015DE9E1BAB274F0070EB4E /* Supporting Files */,
 				D015DEC41BAB2C9D0070EB4E /* Apple.h */,
 				D015DEC51BAB2C9D0070EB4E /* Apple.m */,
+				D05992C21BB4410900E41D6F /* Tree.h */,
+				D05992C31BB4410900E41D6F /* Tree.m */,
+				D05992C51BB4414100E41D6F /* Leaf.h */,
+				D05992C61BB4414100E41D6F /* Leaf.m */,
+				D05992C81BB441C400E41D6F /* AppleTree.h */,
+				D05992C91BB441C400E41D6F /* AppleTree.m */,
 			);
 			path = AppleTreeApplication;
 			sourceTree = "<group>";
@@ -224,9 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05992C41BB4410900E41D6F /* Tree.m in Sources */,
 				D015DEC61BAB2C9D0070EB4E /* Apple.m in Sources */,
 				D015DEA71BAB274F0070EB4E /* ViewController.m in Sources */,
+				D05992C71BB4414100E41D6F /* Leaf.m in Sources */,
 				D015DEA41BAB274F0070EB4E /* AppDelegate.m in Sources */,
+				D05992CA1BB441C400E41D6F /* AppleTree.m in Sources */,
 				D015DEA11BAB274F0070EB4E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +436,7 @@
 				D015DEC01BAB274F0070EB4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D015DEC11BAB274F0070EB4E /* Build configuration list for PBXNativeTarget "AppleTreeApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +445,7 @@
 				D015DEC31BAB274F0070EB4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

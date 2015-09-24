@@ -17,8 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.apple = [[Apple alloc] init];
-    self.apple.stones = 5;
+    self.appleTree = [[AppleTree alloc] init];
     return YES;
 }
 
